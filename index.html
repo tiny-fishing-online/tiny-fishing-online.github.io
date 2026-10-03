@@ -17,6 +17,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 900px) {
+            .game-with-side-ad {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .game-side-ad {
+                width: 160px !important;
+                min-width: 160px !important;
+                height: 600px !important;
+            }
+
+            .game-bottom-ad {
+                width: 100% !important;
+                max-width: 728px !important;
+            }
+        }
+    </style>
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YS7EBL51CS"></script>
 <script>
@@ -103,9 +122,10 @@
         <div class="row-flex">
             <div class="main-flex">
                 <div class="row">
-                    <div class="frame-box-game">
-                        <iframe title="Tiny Fishing" id="iframehtml5" class="d-block" width="100%" height="600px" target="_parent" src="/class911/tiny-fishing/" frameborder="0" border="0" scrolling="no" allowfullscreen=""></iframe>
-                        <div class="header-game">
+                    <div class="game-with-side-ad" style="display:flex; align-items:flex-start; justify-content:center; gap:15px; width:100%;">
+                        <div class="frame-box-game" style="flex:1; min-width:0;">
+                            <iframe title="Tiny Fishing" id="iframehtml5" class="d-block" width="100%" height="600px" target="_parent" src="/class911/tiny-fishing/" frameborder="0" border="0" scrolling="no" allowfullscreen=""></iframe>
+                            <div class="header-game">
                             <div class="box-header">
                                 <h1>Tiny Fishing</h1>
                                 <div class="header-game-extend">
@@ -133,6 +153,37 @@
                                 </g>
                             </svg>
                         </span>
+                        </div>
+
+                        <!-- 160x600 RIGHT-SIDE AD -->
+                        <div class="game-side-ad" style="width:160px; min-width:160px; height:600px; display:flex; justify-content:center; align-items:flex-start; overflow:hidden;">
+                            <script>
+                              atOptions = {
+                                'key' : 'b19632ab218df7e88defab83aa791292',
+                                'format' : 'iframe',
+                                'height' : 600,
+                                'width' : 160,
+                                'params' : {}
+                              };
+                            </script>
+                            <script src="https://www.highrevenueformat.com/b19632ab218df7e88defab83aa791292/invoke.js"></script>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 728x90 AD BELOW GAME -->
+                <div class="row" style="justify-content:center; margin-top:15px;">
+                    <div class="game-bottom-ad" style="width:728px; max-width:100%; min-height:90px; display:flex; justify-content:center; align-items:center; overflow:hidden;">
+                        <script>
+                          atOptions = {
+                            'key' : '4a4025e9ac1bc84a7e9c63b3a8c88b96',
+                            'format' : 'iframe',
+                            'height' : 90,
+                            'width' : 728,
+                            'params' : {}
+                          };
+                        </script>
+                        <script src="https://www.highrevenueformat.com/4a4025e9ac1bc84a7e9c63b3a8c88b96/invoke.js"></script>
                     </div>
                 </div>
                 <br />
